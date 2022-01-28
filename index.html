@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Drum Kit V-2.0</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Drum Kit V-2.0</h1>
+        <div class="keys-set">
+            <button data-key="65" class="key key_A">A</button>
+            <button data-key="83" class="key key_S">S</button>
+            <button data-key="68" class="key key_D">D</button>
+            <button data-key="70" class="key key_F">F</button>
+            <button data-key="71" class="key key_G">G</button>
+            <button data-key="72" class="key key_H">H</button>
+            <button data-key="74" class="key key_J">J</button>
+            <button data-key="75" class="key key_K">K</button>
+            <button data-key="76" class="key key_L">L</button>
+        </div>
+
+        <div class="vol-control">
+            <i class="fa fa-volume-up fa-2x"></i>
+            <input type="range" name="" id="vol-slider" min="0" max="100">
+        </div>
+        <div class="btn-grp">
+            <button id="random">Generate Random</button>
+            <!-- <button id="theme">Change Theme</button> -->
+            <button id="bg">Change BG</button>
+        </div>
+    </div>
+
+    <!-- Sounds. we used data attributes,data key along with the data key audio  -->
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
